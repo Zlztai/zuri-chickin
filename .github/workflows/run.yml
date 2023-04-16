@@ -1,0 +1,22 @@
+name: FPvpn-chickin
+
+on:
+#   push:
+#   schedule:
+#     - cron: 0 */6 * * *
+  workflow_dispatch:
+
+jobs:
+   FPvpn-chickin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: checkin
+        run: |
+          ./RequestEnv.sh
+      - name: action
+        run: |
+          python PFvpn-chickin.py
+

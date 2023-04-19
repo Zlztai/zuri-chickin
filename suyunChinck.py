@@ -1,5 +1,5 @@
 
-from util import *
+from Method import *
 import time
 
 username = sys.argv[1] # 登录账号

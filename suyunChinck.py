@@ -5,7 +5,7 @@ import time
 username = sys.argv[1] # 登录账号
 password = sys.argv[2] # 登录密码
 
-def hupu():
+def suyunChinck():
     try:
         driver = get_web_driver()
         driver.get("https://yooo.one/auth/login")

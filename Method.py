@@ -50,11 +50,11 @@ def mail(txt,my_sender,my_user,my_pass):
     return ret
 
 
-ret = mail()
-if ret:
-    print("邮件发送成功")
-else:
-    print("邮件发送失败")
+# ret = mail()
+# if ret:
+#     print("邮件发送成功")
+# else:
+#     print("邮件发送失败")
 
 
 

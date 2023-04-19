@@ -30,12 +30,12 @@ def suyunChinck():
             print('按钮不可点击，已签到？？')
             #获取元素值
             result = driver.find_element('xpath', '//*[@id="kt_subheader"]/div/div[2]/a').text
-            print(result)
+           
     except:
         pass
     finally:
         driver.quit()
-    return result
+    time.sleep(3)
     print(result)
     #发送邮件
     ret = mail(result,my_sender,my_user,my_pass)
@@ -43,6 +43,6 @@ def suyunChinck():
         print("邮件发送成功")
     else:
         print("邮件发送失败")
-
+    return result
 if __name__ == '__main__':
     suyunChinck()

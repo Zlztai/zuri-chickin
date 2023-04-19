@@ -23,11 +23,15 @@ def suyunChinck():
         try:
             #签到
             driver.find_element('xpath', '//*[@id="checkin"]').click()
+            time.sleep(2)
+        except NoSuchElementException:
+            pass
         finally: 
             print('按钮不可点击，已签到？？')
             #获取元素值
             result = driver.find_element('xpath', '//*[@id="kt_subheader"]/div/div[2]/a').text
-
+    except:
+        pass
     finally:
         driver.quit()
     return result

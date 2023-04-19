@@ -20,9 +20,12 @@ def suyunChinck():
         time.sleep(2)
         driver.find_element('xpath', '//*[@id="login_submit"]').click()
         time.sleep(5)
-        driver.find_element('xpath', '//*[@id="checkin"]').click()
-        #获取元素值
-        result = driver.find_element('xpath', '//*[@id="checkin"]').text
+        try:
+            driver.find_element('xpath', '//*[@id="checkin"]').click()
+            #获取元素值
+            result = driver.find_element('xpath', '//*[@id="checkin"]').text
+        finally: 
+            print('按钮不可点击，已签到？？')
     except:
         raise
     finally:

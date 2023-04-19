@@ -27,8 +27,7 @@ def suyunChinck():
             print('按钮不可点击，已签到？？')
             #获取元素值
             result = driver.find_element('xpath', '//*[@id="kt_subheader"]/div/div[2]/a').text
-    except:
-        raise
+
     finally:
         driver.quit()
     return result

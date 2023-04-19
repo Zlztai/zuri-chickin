@@ -30,16 +30,16 @@ def get_web_driver():
 
 
 #验证码处理
-import ddddocr
+# import ddddocr
 
-def Ocr_Captcha(Picture):
-        ocr = ddddocr.DdddOcr(beta=True)
+# def Ocr_Captcha(Picture):
+#         ocr = ddddocr.DdddOcr(beta=True)
 
-        with open(Picture, 'rb') as f:
-            image = f.read()
+#         with open(Picture, 'rb') as f:
+#             image = f.read()
 
-        res = ocr.classification(image)
-        print( res)
-        return res
+#         res = ocr.classification(image)
+#         print( res)
+#         return res
 # if __name__ == '__main__':
 #         Ocr_Captcha()

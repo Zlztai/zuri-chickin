@@ -5,6 +5,10 @@ import time
 username = sys.argv[1] # 登录账号
 password = sys.argv[2] # 登录密码
 
+my_sender = sys.argv[3]  # 填写发信人的邮箱账号
+my_pass = sys.argv[4]  # 发件人邮箱授权码
+my_user = sys.argv[5]  # 收件人邮箱账号
+
 def suyunChinck():
     try:
         driver = get_web_driver()
@@ -24,6 +28,8 @@ def suyunChinck():
     finally:
         driver.quit()
     return result
+    print(result)
+    mail(result,my_sender,my_user,my_pass)
 
 if __name__ == '__main__':
     suyunChinck()

@@ -44,5 +44,5 @@ jobs:
         run: |
           # sudo cp -p ./chromedriver /usr/bin/
           # chmod -R 777 /usr/bin/chromedriver
-          python ./suyunChinck.py ${{ secrets.ZRMAIL }} ${{ secrets.ZRPASSWORD }} 
+          python ./zuriChinck.py ${{ secrets.ZRMAIL }} ${{ secrets.ZRPASSWORD }} 
           

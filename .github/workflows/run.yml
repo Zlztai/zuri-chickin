@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      # Runs a single command using the runners shell   ##${{ secrets.QQSENDER }} ${{ secrets.QQPS }} ${{ secrets.QQRECEIVE }}
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
@@ -44,4 +44,5 @@ jobs:
         run: |
           # sudo cp -p ./chromedriver /usr/bin/
           # chmod -R 777 /usr/bin/chromedriver
-          python ./suyunChinck.py ${{ secrets.SYMAIL }} ${{ secrets.SYPASSWORD }} ${{ secrets.QQSENDER }} ${{ secrets.QQPS }} ${{ secrets.QQRECEIVE }}
+          python ./suyunChinck.py ${{ secrets.ZRMAIL }} ${{ secrets.ZRPASSWORD }} 
+          

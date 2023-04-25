@@ -5,9 +5,9 @@ import time
 username = sys.argv[1] # 登录账号
 password = sys.argv[2] # 登录密码
 
-my_sender = sys.argv[3]  # 填写发信人的邮箱账号
-my_pass = sys.argv[4]  # 发件人邮箱授权码
-my_user = sys.argv[5]  # 收件人邮箱账号
+# my_sender = sys.argv[3]  # 填写发信人的邮箱账号
+# my_pass = sys.argv[4]  # 发件人邮箱授权码
+# my_user = sys.argv[5]  # 收件人邮箱账号
 
 def zuriChinck():
     try:

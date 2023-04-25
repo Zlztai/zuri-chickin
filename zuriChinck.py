@@ -9,7 +9,7 @@ my_sender = sys.argv[3]  # 填写发信人的邮箱账号
 my_pass = sys.argv[4]  # 发件人邮箱授权码
 my_user = sys.argv[5]  # 收件人邮箱账号
 
-def suyunChinck():
+def zuriChinck():
     try:
         driver = get_web_driver()
         driver.get("https://zhuri.cc/auth/login")
@@ -31,11 +31,11 @@ def suyunChinck():
             #获取元素值
 #             result = driver.find_element('xpath', '//*[@id="kt_subheader"]/div/div[2]/a').text
            
-#     except:
-#         pass
-#     finally:
-#         driver.quit()
-#     time.sleep(3)
+    except:
+        pass
+    finally:
+        driver.quit()
+    time.sleep(3)
 #     print(result)
 #     #发送邮件
 #     ret = mail(result,my_sender,my_user,my_pass)
@@ -45,4 +45,4 @@ def suyunChinck():
 #         print("邮件发送失败")
 #     return result
 if __name__ == '__main__':
-    suyunChinck()
+    zuriChinck()
